@@ -6375,7 +6375,7 @@ function mario:globalcollide(a, b)
 			else
 				self:grow()
 			end
-			if b.makesmarioshoot and self.size == 3 then
+			if b.makesmarioshoot and self.size >= 3 then
 				--if not (oldfireenemy == b.makesmarioshoot) then
 					self.fireenemy = b.makesmarioshoot
 					self.dofireenemy = self.fireenemy
